@@ -7,9 +7,11 @@ ENV ORACLE_HOME="/usr/lib/oracle/19.24/client64"
 ENV LD_LIBRARY_PATH="$ORACLE_HOME/lib"
 ENV PATH="$PATH:$ORACLE_HOME/bin"
 ENV APP_HOME="/usr/src/app"
-ENV TNS_ADMIN="/usr/src/app/Wallet_QRYQ1SKFQXQ6P2T1"
+ENV TNS_ADMIN="/usr/tns_credentials"
 
 COPY . $APP_HOME
+
+COPY ./tns_credentials $TNS_ADMIN
 
 COPY \
   vendor/19.24/oracle-instantclient*-basiclite-*.rpm \

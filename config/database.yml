@@ -14,9 +14,7 @@ default: &default
 
 development:
   <<: *default
-  host: <%= ENV["DATABASE_HOST"]%>
-  port: 1522
-  database: <%= ENV["DATABASE_NAME"]%>
+  database: <%= ENV["TNS_NAME"]%>
   username: <%= ENV["DATABASE_USER"]%>
   password: <%= ENV["DATABASE_PASSWORD"] %>
 
