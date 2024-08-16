@@ -5,7 +5,8 @@ ruby "3.3.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
-
+gem 'activerecord-oracle_enhanced-adapter', '~> 7.0.0'
+gem "figaro"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
 

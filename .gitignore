@@ -31,3 +31,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/Wallet_QRYQ1SKFQXQ6P2T1
+
+/config/application.yml
