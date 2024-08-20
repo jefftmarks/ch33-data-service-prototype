@@ -29,7 +29,8 @@ RUN set -ex && \
   echo /usr/lib/oracle/19.24/client64/lib > /etc/ld.so.conf.d/oracle-instantclient19.24.conf && \
   ldconfig
 
-WORKDIR "usr/src/app"
+WORKDIR "/usr/src/app"
+
 RUN bundle install
 
 CMD ["sh"]
