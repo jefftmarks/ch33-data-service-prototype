@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 class Amendment < ApplicationRecord
   self.table_name = 'ch33_amendments_view'
 

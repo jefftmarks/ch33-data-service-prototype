@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 class Enrollment < ApplicationRecord
   self.table_name = 'ch33_enrollments_view'
 

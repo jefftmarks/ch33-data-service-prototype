@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 class EntitlementStatus < ApplicationRecord
   self.table_name = 'ch33_claimants_view'
 
