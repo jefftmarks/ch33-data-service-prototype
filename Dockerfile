@@ -9,8 +9,6 @@ ENV PATH="$PATH:$ORACLE_HOME/bin"
 ENV APP_HOME="/usr/src/app"
 ENV TNS_ADMIN="/usr/tns_credentials"
 
-COPY . $APP_HOME
-
 COPY ./tns_credentials $TNS_ADMIN
 
 COPY \
@@ -29,8 +27,6 @@ RUN set -ex && \
   echo /usr/lib/oracle/19.24/client64/lib > /etc/ld.so.conf.d/oracle-instantclient19.24.conf && \
   ldconfig
 
-WORKDIR "/usr/src/app"
-
-RUN bundle install
+WORKDIR $APP_HOME
 
 CMD ["sh"]
