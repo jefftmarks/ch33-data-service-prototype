@@ -29,4 +29,6 @@ RUN set -ex && \
 
 WORKDIR $APP_HOME
 
+EXPOSE 3000
+
 CMD ["sh"]
